@@ -1,0 +1,192 @@
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carve-section{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.carve1{
+    position: absolute;
+    background-color: #0dfdbf;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.carve2{
+    width: 100vw;
+    position: absolute;
+    background-color: black;
+    bottom:0%;
+
+}
+.custom-shape-divider-bottom-1703775703 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703775703 svg {
+    position: relative;
+    display: block;
+    width: calc(166% + 1.3px);
+    height: 340px;
+}
+
+.custom-shape-divider-bottom-1703775703 .shape-fill {
+    fill: #4A4A4A;
+}
+.weather-cont {
+    width: 40rem;
+    background-color: #004f1561;
+    border-radius: 1rem;
+    padding: 1rem 0.8rem;
+    margin: auto;
+    margin-top: -3rem;
+    position: absolute;
+    z-index: 99;
+    
+}
+.text-center{
+    color: #dc3545;
+    font-size: 6vh;
+}
+
+.city-search {
+    position: relative;
+    width: 20em;
+    margin: auto;
+}
+
+.city-search input {
+    font-weight: 600;
+}
+
+.location {
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+}
+
+.city-name {
+    font-size: 1.5em;
+}
+
+.temp {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.temp-details {
+    width: 22em;
+    margin: auto;
+}
+
+.temp-details p {
+    font-weight: 600;
+}
+
+.temp-extra p {
+    margin-bottom: 0;
+}
+
+.temp-div p {
+    margin-bottom: 0;
+}
+
+.error-msg {
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+.scroller {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    /* z-index: 12; */
+  }
+  .scroller::-webkit-scrollbar {
+    display: none;
+  
+  }
+  .scsroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .scsroller-in h4 {
+    display: inline-block;
+    font-size: 100px;
+    color: transparent;
+    font-weight: 900;
+    font-family: sans-serif;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    -webkit-text-stroke: 1px #000000;
+    margin: 2px 40px;
+  
+  }
+  .scsroller-in h4:hover {
+    color: #000000;
+  }
+  
+  @keyframes scroll {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+
+@media screen and (max-width:600px) {
+    .weather-cont {
+        height: 62vh;
+        width: 90vw;
+        margin-top: 2rem;
+    }
+    .scsroller-in h4 {
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .scroller {
+        margin-top: 4vh;
+      }
+    .scsroller-in h4 {
+        margin: 1px 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
